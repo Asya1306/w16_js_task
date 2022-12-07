@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи по js</title>
+</head>
+
+<body>
+    <script>
+        // 1. Дан массив ['js', 'css', 'html']. Выведите на экран первый элемент.
+        const arr1 = ['js', 'css', 'html'];
+        console.log(arr1[0]);
+
+        // 2. Отфильтруйте массив `[0, 1, false, 2, undefined, '', 3, null]` от нежелательных значений, таких как `false`, `undefined`, пустые строки, `0`, `null` с помощью метода `filter`.  Ожидаемый результат: `[1, 2, 3]`.
+        const arr2 = [0, 1, false, 2, undefined, '', 3, null];
+        const newArr2 = arr2.filter(function (item) {
+            return item
+        })
+        console.log(newArr2);
+
+        //3. Дан массив `[[1,2], [1,2,3], [1,2,3,4]]`. Найдите индекс массива, длина которого `> 3`. Ожидаемый результат: `2`
+        const arr3 = [
+            [1, 2],
+            [1, 2, 3],
+            [1, 2, 3, 4]
+        ];
+
+        function findArr3(items) {
+            return items.length > 3
+        }
+        console.log(arr3.findIndex(findArr3));
+    </script>
+</body>
+
+</html>
